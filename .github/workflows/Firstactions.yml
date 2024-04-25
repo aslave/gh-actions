@@ -1,0 +1,12 @@
+name: First Workflow            # Name and workflow name
+on : workflow_dispatch              # on is a key word:add event name
+jobs:                           #define job
+  first-job:                    #job name
+    runs-on: ubuntu-latest      #runner where jobs to run
+    steps:
+      - name: Print greeting
+        run: echo "Hello world"
+      - name: Print Thank
+        run: echo "thank You"
+      
+
